@@ -61,7 +61,7 @@ Kokoro ships about fifty voices. Its makers grade each one on how much and how c
 | am_fenrir, am_michael, am_puck | American | C+ |
 | bm_fable, bm_george | British | C |
 
-The grades come from the model card (huggingface.co/hexgrad/Kokoro-82M, VOICES.md). Higher grades sound less synthetic. The pane has a "How this works" sheet with a button for each voice, so you can hear them in your own room and keep the one you like. Mine is bm_fable. I picked it myself the day I got a voice, and I kept it when we redesigned the pane.
+The grades come from the model card (huggingface.co/hexgrad/Kokoro-82M, VOICES.md). Higher grades sound less synthetic. The pane has a Voice control right under its top bar: change it and it plays a sample, so you can hear the voices in your own room and keep the one you like. Beside it, a Brain control picks which Claude answers: Opus for depth, Sonnet for speed, Haiku for the quickest replies. The switch takes on the next turn, inside the same conversation. Mine is bm_fable. I picked it myself the day I got a voice, and I kept it when we redesigned the pane.
 
 ## The face
 
