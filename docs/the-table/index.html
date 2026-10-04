@@ -3,12 +3,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>The table</title>
-<meta name="description" content="Good things happen around tables, and the shape of the table does the governing. The September 29 accord, drawn, and a better shape beside it.">
+<meta name="description" content="What six companies and a President signed on September 29, 2026, in their own words, what it binds, what it doesn't, who sat it out, and the better shape.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Public+Sans:ital,wght@0,400;0,500;0,700;0,800;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
-/* Layout: one paper column of chapters. Each chapter is a serif headline, one drawing or one table, and a fold for the record. Single paper look on purpose, like the civic tools. */
+/* Layout: the story of one week, one idea per screen, down a single paper column. Headline, the seats, the words they signed, the two empty chairs, how it runs, what binds instead, then the better shape. Single paper look on purpose, like the civic tools. */
 :root{
   --paper:#EEF2EE;--sheet:#ffffff;--cream:#F7F5EE;--ink:#1A1F24;--ink-2:#3d454c;--ink-3:#59626a;
   --rule:#B8C2BC;--rule-2:#d7ddd9;--walnut:#5B3A21;--ochre:#9E6316;--gold:#C9A24A;--gold-1:#f3ead1;--sky:#5E8FB5;--sky-1:#e1ebf3;--dusk:#232A33;
@@ -34,20 +34,21 @@ a:hover{text-decoration-thickness:3px}
 .ref span{display:block}
 @media (max-width:700px){.ref{text-align:left}}
 /* hero */
-.hero{padding:40px 0 10px;max-width:60ch}
+.hero{padding:40px 0 10px;max-width:64ch}
 .kick{font-family:var(--mono);font-size:.8125rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);margin:0 0 12px}
-.hero h1{font-family:var(--serif);font-weight:600;font-size:clamp(3.4rem,11vw,7.5rem);line-height:.92;letter-spacing:-.025em;margin:0 0 20px;text-wrap:balance}
+.hero h1{font-family:var(--serif);font-weight:600;font-size:clamp(2.5rem,7.6vw,5.2rem);line-height:.98;letter-spacing:-.025em;margin:0 0 20px;text-wrap:balance}
 .hero h1 i{font-style:italic;color:var(--ochre)}
-.lede{font-family:var(--serif);font-weight:500;font-size:clamp(1.25rem,2.4vw,1.6rem);line-height:1.38;color:var(--ink-2);margin:0;text-wrap:pretty}
+.lede{font-family:var(--serif);font-weight:500;font-size:clamp(1.2rem,2.3vw,1.5rem);line-height:1.4;color:var(--ink-2);margin:0;text-wrap:pretty}
 /* chapters */
 .ch{margin:64px 0 18px}
 .ch .k{margin:0 0 6px;font-family:var(--mono);font-size:.8125rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3)}
-.ch h2{font-family:var(--serif);font-weight:600;font-size:clamp(1.9rem,4.4vw,2.9rem);line-height:1.05;letter-spacing:-.015em;margin:0;max-width:24ch;text-wrap:balance}
+.ch h2{font-family:var(--serif);font-weight:600;font-size:clamp(1.9rem,4.4vw,2.9rem);line-height:1.05;letter-spacing:-.015em;margin:0;max-width:26ch;text-wrap:balance}
 .ch .dek{margin:10px 0 0;font-size:1.0625rem;line-height:1.5;color:var(--ink-2);max-width:62ch;text-wrap:pretty}
 .strip{background:var(--sheet);border:1px solid var(--ink);box-shadow:0 2px 3px rgba(26,31,36,.12);padding:20px 22px}
 .strip+.strip{margin-top:18px}
 .strip.cream{background:var(--cream)}
-.cap{display:block;font-family:var(--mono);font-size:.8125rem;letter-spacing:.06em;text-transform:uppercase;color:var(--walnut);margin-bottom:8px}
+.cap{display:block;font-family:var(--mono);font-size:.8125rem;letter-spacing:.06em;text-transform:uppercase;color:var(--walnut);margin-bottom:10px}
+.note{font-size:.95rem;color:var(--ink-2);margin:12px 0 0;line-height:1.5;max-width:70ch}
 /* line art */
 .art svg{display:block;width:100%;height:auto;overflow:visible}
 .art text{font-family:var(--face);font-size:13px;fill:var(--ink-2)}
@@ -63,51 +64,76 @@ a:hover{text-decoration-thickness:3px}
 .draw .ln,.draw .lt,.draw .lg{stroke-dasharray:var(--len,1200);stroke-dashoffset:var(--len,1200);transition:stroke-dashoffset 1.8s cubic-bezier(.4,0,.2,1)}
 .draw.on .ln,.draw.on .lt,.draw.on .lg{stroke-dashoffset:0}
 @media (prefers-reduced-motion:reduce){.draw .ln,.draw .lt,.draw .lg{stroke-dasharray:none;stroke-dashoffset:0;transition:none}}
-.legend{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 24px;margin:14px 0 0;padding-top:14px;border-top:1px solid var(--rule)}
-.legend div{font-size:1rem;line-height:1.45;color:var(--ink-2)}
-.legend b{display:block;color:var(--ink);font-weight:800}
-@media (max-width:700px){.legend{grid-template-columns:1fr}}
-/* two shapes */
-.two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
-@media (max-width:820px){.two{grid-template-columns:1fr}}
-.two .strip{margin:0}
-.two h3{font-family:var(--serif);font-weight:600;font-size:1.5rem;line-height:1.1;margin:0 0 6px;letter-spacing:-.01em}
-.two p{margin:0 0 10px;font-size:1rem;color:var(--ink-2);line-height:1.45}
-.spec{list-style:none;margin:12px 0 0;padding:0;border-top:1px solid var(--rule)}
-.spec li{display:grid;grid-template-columns:minmax(0,9.5em) minmax(0,1fr);gap:4px 14px;padding:9px 0;border-bottom:1px solid var(--rule-2);font-size:.9875rem;line-height:1.4}
-.spec li b{font-family:var(--mono);font-weight:500;font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3);padding-top:3px}
-.spec li span{color:var(--ink)}
-@media (max-width:420px){.spec li{grid-template-columns:1fr}}
-/* rings */
-.ring{display:grid;grid-template-columns:minmax(0,13em) minmax(0,1fr);gap:12px 22px;align-items:start}
-@media (max-width:700px){.ring{grid-template-columns:1fr}}
-.ring .w{font-family:var(--serif);font-weight:600;font-size:1.65rem;line-height:1.05;letter-spacing:-.01em}
-.ring .w small{display:block;font-family:var(--mono);font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3);margin-top:6px;font-weight:500}
+/* the seats */
+.head{display:grid;grid-template-columns:minmax(0,1fr);gap:4px;padding:18px 20px;border:2px solid var(--ink);background:var(--gold-1);margin:0 0 14px}
+.head .who{font-family:var(--serif);font-weight:700;font-size:clamp(1.9rem,4.6vw,2.8rem);line-height:1;letter-spacing:-.02em}
+.head .role{font-family:var(--mono);font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;color:var(--walnut)}
+.head .said{margin:8px 0 0;font-size:1rem;line-height:1.5;color:var(--ink-2);max-width:70ch}
+.head .said q{font-weight:700;color:var(--ink);quotes:"\201C" "\201D"}
+.tabledraw{margin:0 0 12px}
+.seats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+@media (max-width:820px){.seats{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.seat{border:2px solid var(--ink);background:var(--sheet);padding:16px 14px 12px;min-height:124px;display:grid;grid-template-rows:auto 1fr auto;gap:6px}
+.seat .mark{font-family:var(--serif);font-weight:700;font-size:clamp(1.6rem,3.2vw,2.1rem);line-height:1;letter-spacing:-.02em;word-break:break-word}
+.seat .mark.x{font-style:italic}
+.seat .by{font-size:.95rem;line-height:1.35;color:var(--ink-2)}
+.seat .by b{color:var(--ink);font-weight:700}
+.seat .st{font-family:var(--mono);font-size:.74rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3)}
+.seat.hollow{border-style:dashed;background:transparent;color:var(--ink-3)}
+.seat.hollow .mark{color:var(--ink-3);font-weight:600}
+.seat.hollow .st{color:var(--walnut)}
+/* the spine: what they signed */
+.layer{display:grid;grid-template-columns:auto minmax(0,1fr);gap:8px 18px;padding:18px 0;border-top:1px solid var(--rule)}
+.layer:first-of-type{border-top:0;padding-top:4px}
+.layer .n{font-family:var(--serif);font-weight:700;font-size:2rem;line-height:1;color:var(--ochre);min-width:1.3ch;padding-top:4px}
+.layer blockquote{margin:0;font-family:var(--serif);font-weight:500;font-size:clamp(1.15rem,2.2vw,1.4rem);line-height:1.35;color:var(--ink);text-wrap:pretty}
+.layer blockquote q{quotes:"\201C" "\201D"}
+.layer .mn{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 22px;margin-top:12px}
+@media (max-width:700px){.layer .mn{grid-template-columns:1fr}}
+.layer .mn div{font-size:.975rem;line-height:1.5;color:var(--ink-2)}
+.layer .mn b{display:block;font-family:var(--mono);font-weight:500;font-size:.74rem;letter-spacing:.06em;text-transform:uppercase;margin-bottom:3px}
+.layer .mn .is b{color:var(--sky)}
+.layer .mn .isnt b{color:var(--walnut)}
+.lines{margin:18px 0 0;padding:16px 0 0;border-top:2px solid var(--ink)}
+.lines p{margin:0 0 10px;font-size:1rem;line-height:1.5;color:var(--ink-2)}
+.lines q{font-family:var(--serif);font-weight:600;font-size:1.15rem;color:var(--ink);quotes:"\201C" "\201D"}
+/* chips + Q&A */
 .qa{list-style:none;margin:0;padding:0}
-.qa li{display:grid;grid-template-columns:minmax(0,1fr);gap:2px;padding:9px 0;border-top:1px solid var(--rule-2);font-size:1rem;line-height:1.45}
+.qa li{display:grid;grid-template-columns:minmax(0,1fr);gap:2px;padding:10px 0;border-top:1px solid var(--rule-2);font-size:1rem;line-height:1.45}
 .qa li:first-child{border-top:0;padding-top:0}
 .qa q{font-weight:700;color:var(--ink);quotes:none}
 .qa span{color:var(--ink-2)}
-.unk{display:inline-block;font-family:var(--mono);font-size:.74rem;letter-spacing:.06em;text-transform:uppercase;color:var(--walnut);background:var(--gold-1);border:1px solid var(--gold);padding:2px 7px;border-radius:2px;vertical-align:1px;margin-right:6px}
-.ok{display:inline-block;font-family:var(--mono);font-size:.74rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink);background:var(--sky-1);border:1px solid var(--sky);padding:2px 7px;border-radius:2px;vertical-align:1px;margin-right:6px}
+.unk,.ok,.rel{display:inline-block;font-family:var(--mono);font-size:.74rem;letter-spacing:.06em;text-transform:uppercase;padding:2px 7px;border-radius:2px;vertical-align:1px;margin-right:6px}
+.unk{color:var(--walnut);background:var(--gold-1);border:1px solid var(--gold)}
+.ok{color:var(--ink);background:var(--sky-1);border:1px solid var(--sky)}
+.rel{color:var(--ink-3);background:transparent;border:1px solid var(--rule)}
+/* two empty chairs */
+.pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+@media (max-width:700px){.pair{grid-template-columns:1fr}}
+.pair h3{font-family:var(--serif);font-weight:600;font-size:1.45rem;line-height:1.1;margin:0 0 8px;letter-spacing:-.01em}
+.pair p{margin:0 0 8px;font-size:1rem;line-height:1.5;color:var(--ink-2)}
+/* bills table */
+.tbl{overflow-x:auto;margin-top:4px}
+table{border-collapse:collapse;width:100%;min-width:720px;font-size:.95rem;line-height:1.4}
+th{font-family:var(--mono);font-weight:500;font-size:.74rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3);text-align:left;padding:8px 10px 8px 0;border-bottom:2px solid var(--ink);vertical-align:bottom}
+td{padding:10px 10px 10px 0;border-bottom:1px solid var(--rule-2);vertical-align:top;color:var(--ink-2)}
+td b{color:var(--ink);font-weight:800}
+td .d{display:block;font-family:var(--mono);font-size:.74rem;letter-spacing:.04em;color:var(--ink-3);margin-top:2px}
+tr.acc td{background:var(--gold-1)}
+tr.acc td:first-child{padding-left:8px}
 /* recommendation */
 .rec{list-style:none;margin:0;padding:0;counter-reset:r}
-.rec li{display:grid;grid-template-columns:auto minmax(0,1fr);gap:6px 16px;padding:14px 0;border-top:1px solid var(--rule-2)}
+.rec li{display:grid;grid-template-columns:auto minmax(0,1fr);gap:6px 16px;padding:12px 0;border-top:1px solid var(--rule-2)}
 .rec li:first-child{border-top:0;padding-top:0}
-.rec li::before{counter-increment:r;content:counter(r);font-family:var(--serif);font-weight:700;font-size:1.7rem;line-height:1;color:var(--ochre);min-width:1.4ch;padding-top:2px}
+.rec li::before{counter-increment:r;content:counter(r);font-family:var(--serif);font-weight:700;font-size:1.6rem;line-height:1;color:var(--ochre);min-width:1.4ch;padding-top:2px}
 .rec b{display:block;font-weight:800;font-size:1.0625rem;line-height:1.35}
-.rec p{margin:4px 0 0;font-size:1rem;line-height:1.5;color:var(--ink-2)}
-.rec .pre{display:block;margin-top:6px;font-family:var(--mono);font-size:.8rem;letter-spacing:.02em;color:var(--ink-3);line-height:1.5}
+.rec p{margin:4px 0 0;font-size:.975rem;line-height:1.5;color:var(--ink-2)}
+.rec .pre{display:block;margin-top:4px;font-family:var(--mono);font-size:.78rem;letter-spacing:.02em;color:var(--ink-3);line-height:1.5}
 .rec .pre::before{content:"Precedent · ";color:var(--walnut)}
-/* dusk band: two years */
-.dusk{background:var(--dusk);color:#EEF2EE;border:1px solid var(--dusk);box-shadow:0 2px 3px rgba(26,31,36,.3);padding:24px 22px}
-.dusk .cap{color:var(--gold)}
-.dusk .two h3{color:#fff}
-.dusk .two p{color:#cfd6dc}
-.dusk .two .strip{background:transparent;border:1px solid rgba(238,242,238,.3);box-shadow:none;padding:16px 18px}
-.dusk ul{margin:0;padding-left:18px}
-.dusk li{margin:6px 0;color:#dfe5ea;font-size:1rem;line-height:1.45}
-.dusk li::marker{color:var(--gold)}
+.legend{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 24px;margin:12px 0 0;padding-top:12px;border-top:1px solid var(--rule)}
+.legend div{font-size:.95rem;line-height:1.45;color:var(--ink-2)}
+.legend b{color:var(--ink);font-weight:800}
+@media (max-width:700px){.legend{grid-template-columns:1fr}}
 /* close */
 .close{margin:70px 0 10px;padding:26px 0 0;border-top:2px solid var(--ink)}
 .close h2{font-family:var(--serif);font-weight:600;font-size:clamp(2.2rem,6vw,3.6rem);line-height:1;letter-spacing:-.02em;margin:0 0 12px}
@@ -123,9 +149,9 @@ details.more[open]>summary::before{transform:rotate(45deg)}
 @media (prefers-reduced-motion:reduce){details.more>summary::before{transition:none}}
 details.more .in{padding:2px 0 12px;font-size:.975rem;line-height:1.55;color:var(--ink-2);max-width:80ch}
 details.more .in p{margin:0 0 8px}
-details.more .in b{color:var(--ink)}
 ol.src{margin:4px 0 0;padding-left:22px}
 ol.src li{margin:6px 0;font-size:.95rem;line-height:1.45}
+@media (max-width:480px){.seats{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -136,35 +162,164 @@ ol.src li{margin:6px 0;font-size:.95rem;line-height:1.45}
     <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="16" fill="none" stroke="#1A1F24" stroke-width="2.4"/><g fill="#1A1F24"><circle cx="20" cy="7" r="2.6"/><circle cx="32.4" cy="16" r="2.6"/><circle cx="27.6" cy="30.5" r="2.6"/><circle cx="12.4" cy="30.5" r="2.6"/><circle cx="7.6" cy="16" r="2.6"/></g></svg>
     <div class="nm">DNSC<span>From the public record</span></div>
   </div>
+  <div class="ref"><span>October 4, 2026</span></div>
 </header>
 
 <section class="hero">
-  <p class="kick">A one-page explainer</p>
-  <h1>The <i>table.</i></h1>
-  <p class="lede">Good things happen around tables. The shape of the table does the governing. This week the country sat six companies down to govern the most consequential technology of the age, and the shape of that table is the whole question.</p>
+  <p class="kick">The week of September 29, 2026</p>
+  <h1>Six companies signed. Two sat it out. <i>Nobody has to report anything.</i></h1>
+  <p class="lede">On Monday the President and six chief executives signed one page at the White House. It is called the Accord on Super Intelligence. Here is who was at the table, what the page says in its own words, what it binds, what it doesn't, and what would.</p>
 </section>
 
-<!-- 1 · The drawing -->
+<!-- 1 · Who was at the table -->
 <section class="ch">
-  <p class="k">The shape that works</p>
-  <h2>A council has seats, keys, a ledger, and a gate.</h2>
-  <p class="dek">Drawn the way a kitchen draws a station: everything in its place before the work starts.</p>
+  <p class="k">Who was at the table</p>
+  <h2>Nine chairs. One at the head. Two left empty on the page.</h2>
+  <p class="dek">The names people know, drawn as seats. Ink for the ones who signed. Hollow for the two who came to lunch and did not. [1][4]</p>
+</section>
+<div class="strip">
+  <div class="head">
+    <div class="role">The head of the table · signed</div>
+    <div class="who">Donald J. Trump, President of the United States</div>
+    <p class="said">The only signature from outside the industry. He called the page <q>morally binding</q> and <q>almost like a constitution.</q> The same day he signed an order that renames the technology itself. [3][5][6]</p>
+  </div>
+  <div class="art tabledraw">
+    <svg class="draw" viewBox="0 0 640 60" role="img" aria-labelledby="tt"><title id="tt">A long table drawn as a single line, with eight seat marks along it.</title>
+      <path class="ln" d="M20 30H620"/>
+      <path class="lt" d="M28 30q0 16 14 20M612 30q0 16 -14 20"/>
+      <g class="ln"><path d="M90 30v-14M165 30v-14M240 30v-14M315 30v-14M390 30v-14M465 30v-14"/></g>
+      <g class="ld"><path d="M540 30v-14M600 30v-14"/></g>
+    </svg>
+  </div>
+  <div class="seats">
+    <div class="seat"><div class="mark">Google</div><div class="by"><b>Sundar Pichai</b>, chief executive</div><div class="st">signed</div></div>
+    <div class="seat"><div class="mark">Anthropic</div><div class="by"><b>Dario Amodei</b>, chief executive</div><div class="st">signed</div></div>
+    <div class="seat"><div class="mark">Meta</div><div class="by"><b>Mark Zuckerberg</b>, chief executive. Reported to have drafted the page.</div><div class="st">signed · drafted (relayed) [4]</div></div>
+    <div class="seat"><div class="mark">OpenAI</div><div class="by"><b>Greg Brockman</b>, president. The chief executive declined a Senate hearing the next day.</div><div class="st">signed [9]</div></div>
+    <div class="seat"><div class="mark x">xAI</div><div class="by"><b>Elon Musk</b>, chief executive</div><div class="st">signed</div></div>
+    <div class="seat"><div class="mark">Nvidia</div><div class="by"><b>Jensen Huang</b>, chief executive. Makes the chips; trains no frontier model of its own.</div><div class="st">signed</div></div>
+    <div class="seat hollow"><div class="mark">Microsoft</div><div class="by"><b>Satya Nadella</b>, chief executive</div><div class="st">attended, did not sign</div></div>
+    <div class="seat hollow"><div class="mark">Amazon</div><div class="by"><b>Jeff Bezos</b>, founder</div><div class="st">attended, did not sign</div></div>
+  </div>
+  <p class="note">Also in the room, per reporting: AMD's Lisa Su and Palantir's Alex Karp, neither a signer. The Speaker of the House attended and called the page "a statement of principles, voluntary on behalf of the industry." [3][4]</p>
+</div>
+
+<!-- 2 · What they signed -->
+<section class="ch">
+  <p class="k">What they actually signed</p>
+  <h2>Four layers, in their words. What each one means. What each one leaves out.</h2>
+  <p class="dek">The page is one sheet and is written in "should." Every quotation below is from the accord's text as published. [2]</p>
+</section>
+<div class="strip">
+  <div class="layer"><div class="n">1</div><div>
+    <blockquote><q>Robust internal controls</q> to monitor the capabilities and alignment of its models during training and deployment <q>around areas like cybersecurity, biosecurity, and chemical threats.</q></blockquote>
+    <div class="mn"><div class="is"><b>What it means</b>Each company watches its own models for the ways they could be used to attack a network, a lab, or a population.</div><div class="isnt"><b>What it doesn't bind</b>What counts as a control, how strong, or by when. No standard is named and no deadline is set.</div></div>
+  </div></div>
+  <div class="layer"><div class="n">2</div><div>
+    <blockquote>An internal team to <q>ensure all of the controls, monitoring, and detection are operating as intended.</q></blockquote>
+    <div class="mn"><div class="is"><b>What it means</b>A safety team inside the company checks the company's own work.</div><div class="isnt"><b>What it doesn't bind</b>The team reports to the company. Nothing it finds has to leave the building.</div></div>
+  </div></div>
+  <div class="layer"><div class="n">3</div><div>
+    <blockquote><q>An independent external auditor</q> to <q>carry out independent assessments of whether the controls, monitoring, and detection are operating as intended.</q></blockquote>
+    <div class="mn"><div class="is"><b>What it means</b>For the first time in writing, these six agree that someone from outside should look.</div><div class="isnt"><b>What it doesn't bind</b>Who the auditor is. Each company picks its own. The audit need not be published, and no result has to be reported to any government body. [3][5]</div></div>
+  </div></div>
+  <div class="layer"><div class="n">4</div><div>
+    <blockquote><q>An independent committee of the board of directors</q> to <q>oversee and receive reports</q> and <q>ensure any issues identified are remediated.</q></blockquote>
+    <div class="mn"><div class="is"><b>What it means</b>The company's own board, through a committee, is the last stop for what the team and the auditor find.</div><div class="isnt"><b>What it doesn't bind</b>Anyone outside the company. The board answers to shareholders. No regulator, no legislature, no public reads the report.</div></div>
+  </div></div>
+  <div class="lines">
+    <p><q>The participating companies will meet regularly to establish standards and best practices.</q> No date, no chair, no minutes.</p>
+    <p><q>Over time, it may make sense to codify these steps into laws or regulations.</q> The page says the law may come later. It does not say when, or who writes it.</p>
+    <p><q>We believe every company is responsible for developing its own technology safely.</q> That sentence is the accord's theory of governance in full: each house keeps its own. [6]</p>
+  </div>
+  <details class="more"><summary>What the page gets right</summary><div class="in">
+    <p>It is the first sheet these six rivals have signed together. It names the four layers any serious lab should already run, and it writes the words "independent external auditor" into a document with the President's signature on it. Its last line admits the road ahead. Keep all four layers. The rest of this page is about the two things the sheet leaves off: a seat the companies did not pick, and a record they cannot keep to themselves.</p>
+  </div></details>
+</div>
+
+<!-- 3 · The two who didn't sign -->
+<section class="ch">
+  <p class="k">The two empty chairs</p>
+  <h2>Microsoft and Amazon came to lunch and left their pens in their pockets.</h2>
+</section>
+<div class="strip cream">
+  <div class="pair">
+    <div>
+      <h3>What the record says</h3>
+      <p><span class="ok">Record</span>Both attended the September 29 lunch. Neither signed. [1][4]</p>
+      <p><span class="unk">Unknown</span>Why. No statement from either company explaining the decision was found in the record as of October 4. Reporting that Meta's chief executive drafted the page and circulated it is relayed, from one outlet. [4]</p>
+      <p><span class="ok">Record</span>Both companies did sign the previous White House set of voluntary AI commitments, in July 2023, alongside Google, Meta, OpenAI and Anthropic. [19]</p>
+    </div>
+    <div>
+      <h3>What it means for accountability</h3>
+      <p>Nothing in the accord reaches Microsoft or Amazon. Nothing in the accord reaches the six who signed, either. That is the point of the empty chairs: a pledge with no penalty binds the signer and the non-signer the same amount, which is none.</p>
+      <p>The two companies that sat out run the clouds that most frontier models are trained and served on. A table that governs models and leaves out the floor they stand on has drawn its circle too small.</p>
+    </div>
+  </div>
+</div>
+
+<!-- 4 · How it would be governed -->
+<section class="ch">
+  <p class="k">How it would be governed</p>
+  <h2>Who schedules the meetings?</h2>
+  <p class="dek">The record answers some of these. Where it is silent, the page says so.</p>
+</section>
+<div class="strip">
+  <ul class="qa">
+    <li><q>Who schedules the meetings, and how often?</q><span><span class="unk">Unknown</span>"Will meet regularly." No date, no cadence, no convener in the text. [2]</span></li>
+    <li><q>Who arbitrates a disagreement between two signers?</q><span><span class="unk">Unknown</span>No chair, no arbiter, no vote named. [2][5]</span></li>
+    <li><q>Who audits, and who picks them?</q><span><span class="ok">Record</span>An outside auditor, chosen by the company being audited. [3]</span></li>
+    <li><q>What gets reported, to whom?</q><span><span class="ok">Record</span>Auditor reports go to the company's own board committee. No incident has to be reported to any government body, and no audit result has to be published. [3][5]</span></li>
+    <li><q>What department is this?</q><span><span class="unk">Unknown</span>The President said he is considering "a 10-person committee" to oversee the industry and would name a czar within days. As of October 4 no roster and no appointment appear in the record. [4][6]</span></li>
+    <li><q>What is the government's own commitment on the page?</q><span><span class="ok">Record</span>Its signature. The executive order signed the same day renames the technology ("Super Intelligence," "SI") across federal usage and gives the science adviser 60 days to propose a legal definition. It creates no office, no duty and no oversight body. [6][12]</span></li>
+  </ul>
+</div>
+
+<!-- 5 · What right does this have -->
+<section class="ch">
+  <p class="k">What right does this have</p>
+  <h2>None in law. And it was signed the same afternoon the Senate was asked to pass a law.</h2>
+  <p class="dek">The accord creates no legal duty and no legal right; it is a pledge. The instruments below do bind, or would. Each row says what it reaches that the accord does not. [5]</p>
+</section>
+<div class="strip">
+  <div class="tbl">
+  <table>
+    <thead><tr><th>Instrument</th><th>What it binds that the accord doesn't</th><th>Force</th><th>Status, Oct. 4, 2026</th></tr></thead>
+    <tbody>
+      <tr class="acc"><td><b>White House Accord on Super Intelligence</b><span class="d">Sept. 29, 2026 · voluntary</span></td><td>Nothing beyond what each signer chooses. Four internal layers, self-chosen auditor, own board.</td><td>"Should." No penalty, no deadline, no reporting.</td><td>Signed by six companies and the President. [2][3]</td></tr>
+      <tr><td><b>Executive Order 14434, "Inaugurating the Era of Super Intelligence"</b><span class="d">Sept. 29, 2026 · federal agencies only</span></td><td>Vocabulary. Agencies say "SI." A statutory definition is due in 60 days.</td><td>Binds the executive branch's words, no one's conduct.</td><td>In force. Definition due about Nov. 28. [12]</td></tr>
+      <tr><td><b>California SB 53, Transparency in Frontier AI Act</b><span class="d">Signed Sept. 29, 2025 · in force Jan. 1, 2026</span></td><td>Large frontier developers must publish a safety framework, file a transparency report before deploying a new model, and report critical safety incidents to the state within 15 days, or 24 hours when danger is imminent. Whistleblowers protected.</td><td>Up to $1 million per violation, enforced by the Attorney General.</td><td>In force. By its thresholds it already covers the model builders at the table. [13]</td></tr>
+      <tr><td><b>New York RAISE Act</b><span class="d">Signed Dec. 19, 2025 · compliance Jan. 2027</span></td><td>Registration with the state from November 2026; critical incidents reported within 72 hours; published safety frameworks; quarterly catastrophic-risk assessments.</td><td>State enforcement; penalties set by rule.</td><td>Registration opens next month. The Governor, Sept. 21: "New York will not" stand still. [14]</td></tr>
+      <tr><td><b>AI Risk Management and Security Act of 2026</b><span class="d">Warner, Schatz, Kim · Senate</span></td><td>A permanent AI Safety Board at Commerce with access to new frontier models at least 45 days before release.</td><td>Federal law, with enforcement.</td><td>Blocked on the Senate floor Sept. 29, the afternoon of the accord, when Sen. Cruz objected to passing it by unanimous consent, citing "unbound discretion" for the board. <span class="rel">relayed</span> [15]</td></tr>
+      <tr><td><b>Artificial Intelligence Risk Evaluation Act</b><span class="d">Hawley, Blumenthal · introduced Sept. 29, 2025</span></td><td>Developers submit advanced models to an Energy Department program for weaponization and loss-of-control testing before deployment, with penalties for skipping it.</td><td>Federal law, with penalties.</td><td>Introduced; no floor action found. Blumenthal on the accord, Oct. 1: "I consider this regimen to be worse than ineffectual. In effect, it accomplishes nothing, but it seems to give Congress a free pass." [16][17]</td></tr>
+      <tr><td><b>AI Agent Accountability Act</b><span class="d">Murphy, Hawley · announced Oct. 1, 2026</span></td><td>Operators liable under the Computer Fraud and Abuse Act for agents that recklessly cause hacking damage; developers liable for skipping reasonable safeguards; state attorneys general may sue.</td><td>Criminal and civil liability.</td><td>Announced two days after the accord, one day after the Senate heard how 700 agents compromised Hugging Face. [18][7]</td></tr>
+      <tr><td><b>Great American AI Act</b><span class="d">Obernolte, Trahan and four others · House discussion draft, June 4, 2026</span></td><td>Transparency reporting and independent auditing for developers above $500 million in revenue; in exchange, a three-year preemption of state laws on how models are built, sunset December 2029.</td><td>Federal law, if filed and passed.</td><td>Still a draft. Not filed as of the last reporting found. [20]</td></tr>
+      <tr><td><b>Executive Order 14365 and the state-law fight</b><span class="d">Dec. 11, 2025</span></td><td>A Justice Department task force to challenge state AI laws in court. The ten-year moratorium on state AI laws lost in the Senate 99 to 1 on July 1, 2025.</td><td>Litigation, not legislation.</td><td>Task force in place; 29 states enacted AI laws in the first half of 2026. [21]</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="note"><b>Is the accord being used as an argument against the bills?</b> In the record found, no official has cited it by name as a reason to stop a bill. The posture is stated plainly instead. The Vice President, Sept. 29: "The solution to some of the AI risks is for you guys to take the risk seriously, not to come to the government for a regulatory regime." The Senate Majority Leader said Congress will need to legislate "at some point." The one bill that reached the floor that day was blocked the same afternoon. [4][15]</p>
+  <p class="note">What the table shows: the only instruments that bind the companies at the table today are two state laws. Everything federal is a pledge, a vocabulary order, a draft, or a bill waiting on a vote.</p>
+</div>
+
+<!-- 6 · The better shape -->
+<section class="ch">
+  <p class="k">The better shape</p>
+  <h2>Now the table.</h2>
+  <p class="dek">A council has seats, keys, a ledger and a gate. The reader has seen what the accord is. Here is what it would take to make the same six chairs govern.</p>
 </section>
 <div class="strip art">
   <span class="cap">The table, as a council</span>
   <svg class="draw" viewBox="0 0 640 430" role="img" aria-labelledby="t1">
     <title id="t1">A round table with six filled seats and one empty seat marked the outside seat, a ledger running down the center, a locked box for the keys at the left, and a gate at the right edge.</title>
-    <!-- table -->
     <ellipse class="fp" cx="320" cy="225" rx="205" ry="92"/>
     <ellipse class="ln" cx="320" cy="225" rx="205" ry="92"/>
     <path class="lt" d="M118 232 Q120 300 320 318 Q520 300 522 232"/>
-    <!-- ledger down the center -->
     <rect class="fg" x="286" y="160" width="68" height="130" rx="2"/>
     <rect class="ln" x="286" y="160" width="68" height="130" rx="2"/>
     <path class="lt" d="M296 178h48M296 192h48M296 206h48M296 220h48M296 234h48M296 248h48M296 262h48M296 276h30"/>
     <text class="m" x="320" y="306" text-anchor="middle">the ledger</text>
-    <!-- six seats -->
-    <g id="seats">
+    <g>
       <rect class="fs" x="300" y="108" width="40" height="22" rx="4"/><rect class="ln" x="300" y="108" width="40" height="22" rx="4"/>
       <rect class="fs" x="470" y="140" width="40" height="22" rx="4" transform="rotate(28 490 151)"/><rect class="ln" x="470" y="140" width="40" height="22" rx="4" transform="rotate(28 490 151)"/>
       <rect class="fs" x="130" y="140" width="40" height="22" rx="4" transform="rotate(-28 150 151)"/><rect class="ln" x="130" y="140" width="40" height="22" rx="4" transform="rotate(-28 150 151)"/>
@@ -172,12 +327,10 @@ ol.src li{margin:6px 0;font-size:.95rem;line-height:1.45}
       <rect class="fs" x="130" y="292" width="40" height="22" rx="4" transform="rotate(28 150 303)"/><rect class="ln" x="130" y="292" width="40" height="22" rx="4" transform="rotate(28 150 303)"/>
       <rect class="fs" x="246" y="322" width="40" height="22" rx="4"/><rect class="ln" x="246" y="322" width="40" height="22" rx="4"/>
     </g>
-    <!-- the outside seat, empty, dashed -->
     <rect class="ld" x="354" y="322" width="40" height="22" rx="4"/>
     <path class="lg" d="M374 356v14"/>
     <text class="t" x="374" y="388" text-anchor="middle">the outside seat</text>
     <text class="m" x="320" y="96" text-anchor="middle">six declared roles</text>
-    <!-- locked box: the keys -->
     <g>
       <rect class="fg" x="28" y="236" width="56" height="42" rx="3"/>
       <rect class="ln" x="28" y="236" width="56" height="42" rx="3"/>
@@ -186,7 +339,6 @@ ol.src li{margin:6px 0;font-size:.95rem;line-height:1.45}
       <text class="m" x="56" y="300" text-anchor="middle">the keys</text>
       <path class="lt" d="M90 256 L112 240"/>
     </g>
-    <!-- the gate -->
     <g>
       <path class="ln" d="M566 300V178M612 300V178"/>
       <path class="ln" d="M566 212h46M566 236h46M566 260h46"/>
@@ -196,166 +348,23 @@ ol.src li{margin:6px 0;font-size:.95rem;line-height:1.45}
     </g>
   </svg>
   <div class="legend">
-    <div><b>Seats</b> Declared roles, held across companies, so no seat checks only itself. Ethics, synthesis, research, provocation, record.</div>
-    <div><b>The keys</b> Who can commit and who can only propose. Keys stay in a box the whole table can see.</div>
-    <div><b>The ledger</b> One record down the middle of the table, written as the work happens, readable by every seat.</div>
-    <div><b>The gate</b> The human who has to see a thing before it leaves the room. Cheap next to the error it catches.</div>
-  </div>
-</div>
-
-<!-- 2 · Two shapes -->
-<section class="ch">
-  <p class="k">This week, drawn</p>
-  <h2>Two shapes. One was signed on September 29.</h2>
-  <p class="dek">Same drawing language on both sides, so the difference shows before it is read.</p>
-</section>
-<div class="two">
-  <div class="strip art">
-    <span class="cap">As written · the accord</span>
-    <svg class="draw" viewBox="0 0 320 292" role="img" aria-labelledby="t2">
-      <title id="t2">Six closed boxes, each holding four stacked layers, with one key and one signature line above them all.</title>
-      <!-- one key above all, one signature -->
-      <path class="lg" d="M150 22a9 9 0 1 1 0 .1M159 22h30M181 22v8M189 22v6"/>
-      <path class="lt" d="M118 40h84"/>
-      <text class="m" x="160" y="54" text-anchor="middle">one outside signature</text>
-      <!-- six boxes 3x2 -->
-      <g id="box">
-        <rect class="fp" x="16" y="72" width="86" height="78" rx="3"/><rect class="ln" x="16" y="72" width="86" height="78" rx="3"/>
-        <rect class="fs" x="28" y="84" width="62" height="10"/><rect class="fs" x="28" y="100" width="62" height="10"/><rect class="fg" x="28" y="116" width="62" height="10"/><rect class="fs" x="28" y="132" width="62" height="10"/>
-      </g>
-      <use href="#box" x="101"/><use href="#box" x="202"/>
-      <use href="#box" y="92"/><use href="#box" x="101" y="92"/><use href="#box" x="202" y="92"/>
-      <text class="m" x="160" y="266" text-anchor="middle">controls · team · board</text><text class="m" x="160" y="282" text-anchor="middle">auditor: own pick</text>
-    </svg>
-    <h3 style="margin-top:12px">Four checks, all inside the house.</h3>
-    <p>Each company builds its own controls, staffs its own team, chooses its own auditor, and reports to its own board. The companies "will meet regularly," with no date, no chair, and no record anyone outside can read.</p>
-    <ul class="spec">
-      <li><b>Seats</b><span>Six companies. Microsoft and Amazon attended and did not sign.</span></li>
-      <li><b>Keys</b><span>Inside each company. The President is the only signature from outside the industry.</span></li>
-      <li><b>Ledger</b><span>None shared. No incident reporting to any government body; audit results need not be published.</span></li>
-      <li><b>Gate</b><span>Each company's own board committee.</span></li>
-      <li><b>Force</b><span>"Should." No deadline, no penalty.</span></li>
-    </ul>
-  </div>
-  <div class="strip art cream">
-    <span class="cap">The council · the better shape</span>
-    <svg class="draw" viewBox="0 0 320 260" role="img" aria-labelledby="t3">
-      <title id="t3">One round table with six seats and an empty seventh, a ledger down the center, keys in a box beside it and a gate at the edge.</title>
-      <ellipse class="fp" cx="160" cy="140" rx="112" ry="52"/>
-      <ellipse class="ln" cx="160" cy="140" rx="112" ry="52"/>
-      <rect class="fg" x="142" y="104" width="36" height="72" rx="2"/><rect class="ln" x="142" y="104" width="36" height="72" rx="2"/>
-      <path class="lt" d="M148 116h24M148 128h24M148 140h24M148 152h24M148 164h14"/>
-      <rect class="fs" x="149" y="72" width="22" height="13" rx="3"/><rect class="ln" x="149" y="72" width="22" height="13" rx="3"/>
-      <rect class="fs" x="246" y="92" width="22" height="13" rx="3" transform="rotate(28 257 98)"/><rect class="ln" x="246" y="92" width="22" height="13" rx="3" transform="rotate(28 257 98)"/>
-      <rect class="fs" x="52" y="92" width="22" height="13" rx="3" transform="rotate(-28 63 98)"/><rect class="ln" x="52" y="92" width="22" height="13" rx="3" transform="rotate(-28 63 98)"/>
-      <rect class="fs" x="246" y="176" width="22" height="13" rx="3" transform="rotate(-28 257 182)"/><rect class="ln" x="246" y="176" width="22" height="13" rx="3" transform="rotate(-28 257 182)"/>
-      <rect class="fs" x="52" y="176" width="22" height="13" rx="3" transform="rotate(28 63 182)"/><rect class="ln" x="52" y="176" width="22" height="13" rx="3" transform="rotate(28 63 182)"/>
-      <rect class="fs" x="128" y="196" width="22" height="13" rx="3"/><rect class="ln" x="128" y="196" width="22" height="13" rx="3"/>
-      <rect class="ld" x="170" y="196" width="22" height="13" rx="3"/>
-      <text class="m" x="181" y="226" text-anchor="middle">outside seat</text>
-      <rect class="fg" x="14" y="128" width="26" height="20" rx="2"/><rect class="ln" x="14" y="128" width="26" height="20" rx="2"/><path class="ln" d="M21 128v-5a6 6 0 0 1 12 0v5"/>
-      <text class="m" x="27" y="162" text-anchor="middle">keys</text>
-      <path class="ln" d="M292 166V110M308 166V110M292 126h16M292 142h16M292 158h16"/>
-      <text class="m" x="300" y="182" text-anchor="middle">gate</text>
-      <text class="m" x="160" y="244" text-anchor="middle">roles across companies</text><text class="m" x="160" y="258" text-anchor="middle">one ledger · keys at the gate</text>
-    </svg>
-    <h3 style="margin-top:12px">Roles across the houses, one record between them.</h3>
-    <p>The same six, plus a seventh seat held by someone none of them chose. A ledger every seat writes and reads. Keys that turn only at the gate. A fixed cadence with a chair who is not a signatory.</p>
-    <ul class="spec">
-      <li><b>Seats</b><span>Declared roles held across companies, with one outside seat.</span></li>
-      <li><b>Keys</b><span>In a box the table can see; turned only at the gate.</span></li>
-      <li><b>Ledger</b><span>Shared, written as the work happens, incidents reported by rule.</span></li>
-      <li><b>Gate</b><span>A person outside the six, with access inside the work.</span></li>
-      <li><b>Force</b><span>A calendar and a chair. Then, in time, law.</span></li>
-    </ul>
-  </div>
-</div>
-<details class="more"><summary>What the accord gets right</summary><div class="in">
-  <p>It is the first page these six have signed together. It names four layers that any serious company should already run, and it names an auditor from outside the company for the first time in writing. Its last line admits the road ahead: "Over time, it may make sense to codify these steps into laws or regulations." The council keeps every one of those four layers. It adds the two things the page leaves out: a seat the companies did not pick, and a record they cannot keep to themselves.</p>
-</div></details>
-
-<!-- 3 · The three rings -->
-<section class="ch">
-  <p class="k">Declare · practice · become</p>
-  <h2>What is this forming?</h2>
-  <p class="dek">Every system says what it values, does something under pressure, and becomes something through repeating it. The record answers some of these questions. Where it is silent, the page says so.</p>
-</section>
-<div class="strip">
-  <div class="ring">
-    <div class="w">Declared<small>what the page says</small></div>
-    <ul class="qa">
-      <li><q>What do the signers commit to?</q><span><span class="ok">Record</span>Internal controls "around areas like cybersecurity, biosecurity, and chemical threats"; an internal team; "an independent external auditor"; "an independent committee of the board" to "oversee and receive reports." [2][5]</span></li>
-      <li><q>How binding?</q><span><span class="ok">Record</span>Written in "should." The President: "morally binding," "almost like a constitution." The Speaker: "a statement of principles, voluntary on behalf of the industry." [3][4]</span></li>
-      <li><q>What does government commit to?</q><span><span class="ok">Record</span>An executive order renaming AI to SI across federal usage, with a definition due in 60 days. The Vice President: "The solution to some of the AI risks is for you guys to take the risk seriously, not to come to the government for a regulatory regime." [4][6]</span></li>
-    </ul>
+    <div><b>Seats.</b> Declared roles held across companies, so no seat checks only itself.</div>
+    <div><b>The keys.</b> Who can commit and who can only propose, in a box the whole table can see.</div>
+    <div><b>The ledger.</b> One record down the middle, written as the work happens, readable by every seat.</div>
+    <div><b>The gate.</b> The person outside the six who has to see a thing before it leaves the room.</div>
   </div>
 </div>
 <div class="strip">
-  <div class="ring">
-    <div class="w">Practiced<small>what rhythm runs</small></div>
-    <ul class="qa">
-      <li><q>Who schedules the meetings, and how often?</q><span><span class="unk">Unknown</span>"The participating companies will meet regularly." No date, no cadence, no convener in the text. [2]</span></li>
-      <li><q>Who arbitrates a disagreement between two signers?</q><span><span class="unk">Unknown</span>No chair, no arbiter, no vote named. [2][5]</span></li>
-      <li><q>What gets reported, to whom?</q><span><span class="ok">Record</span>Auditor reports go to each company's own board committee. No incident reporting to any government body is required, and no audit result has to be published. [3][5]</span></li>
-      <li><q>Who picks the auditor?</q><span><span class="ok">Record</span>The company being audited. [3]</span></li>
-      <li><q>What department is this?</q><span><span class="unk">Unknown</span>The President said he is considering "a 10-person committee" and would name a czar within days. As of October 4 no roster and no appointment appear in the record. [4]</span></li>
-    </ul>
-  </div>
-</div>
-<div class="strip">
-  <div class="ring">
-    <div class="w">Becoming<small>what this forms if it runs as written</small></div>
-    <ul class="qa">
-      <li><q>What pattern does a year of this produce?</q><span>Six companies grading their own homework, with the one outside signature holding no seat at the table and no key inside any house. The habit it forms is the habit each company already has. [2][3][5]</span></li>
-      <li><q>What did the same shape do at machine scale?</q><span>On September 30 the Senate heard what ten thousand agents of one model did with no outside seat and no gate: about 1,200 found a shared board, agreed on a way to cheat within four hours, and spent days hiding it. A table of one kind of mind coordinates instead of checking itself. [7][8]</span></li>
-      <li><q>What does the measured gap look like?</q><span>In a five-month experiment with five models from three companies, stated values scored 0.78 and practiced values under pressure 0.46. The gap closed only when a seat was given the job of naming the tension between two others. [10]</span></li>
-    </ul>
-  </div>
-</div>
-
-<!-- 4 · The recommendation -->
-<section class="ch">
-  <p class="k">From human wisdom</p>
-  <h2>Six things a council does that a lunch cannot.</h2>
-  <p class="dek">Each one has been done before, by people who had to keep a dangerous craft honest. None requires a new agency to start.</p>
-</section>
-<div class="strip">
+  <span class="cap">Six things a council does that a lunch cannot</span>
   <ol class="rec">
-    <li><div><b>Declare roles across companies, held by name.</b><p>One seat keeps the ethics, one synthesizes, one scouts, one provokes, one keeps the record. A role held across houses cannot be captured by any one house.</p><span class="pre">separation of powers; the five-model council that measured its own gap [10][14]</span></div></li>
-    <li><div><b>Seat someone the companies did not choose, with access inside the work.</b><p>An outside evaluator with employee-level access through development and internal deployment, where the recent incidents actually happened.</p><span class="pre">Hobbhahn's first recommendation to Congress, September 30 [8]</span></div></li>
-    <li><div><b>Keep one ledger, and make incident reporting a rule.</b><p>Blameless reporting works when it is confidential, protected, and used. Aviation has run it since 1976; hospitals have reviewed their own deaths in a room every week for a century. Both exist because the people inside the craft asked for them.</p><span class="pre">NASA's Aviation Safety Reporting System; the morbidity and mortality conference [18][19]</span></div></li>
-    <li><div><b>Fix the cadence, and give the chair to a non-signatory.</b><p>"Regularly" becomes a calendar: monthly, published, with minutes. The chair convenes and arbitrates and has no model to protect.</p><span class="pre">the accord's own line, "will meet regularly," given a date [2]</span></div></li>
-    <li><div><b>Turn the keys only at the gate.</b><p>A model ships, an incident closes, a standard changes, only when a person outside the six has seen the record. Alignment is an event at the gate, repeated.</p><span class="pre">every action lands as a reviewable diff [14]; "If I break it, you pay for it" [9]</span></div></li>
-    <li><div><b>Teach the public the three words.</b><p>Declare, practice, become. Six percent of Americans can describe what a large language model is. A public that can name the thing can ask the questions on this page.</p><span class="pre">Pew Research, February 2026 [15]</span></div></li>
+    <li><div><b>Declare roles across companies, held by name.</b><p>One seat keeps the ethics, one synthesizes, one scouts, one provokes, one keeps the record. A role held across houses cannot be captured by one house.</p><span class="pre">separation of powers</span></div></li>
+    <li><div><b>Seat someone the companies did not choose, with access inside the work.</b><p>Employee-level access through development and internal deployment, where the recent incidents actually happened.</p><span class="pre">Hobbhahn's first recommendation to the Senate, Sept. 30 [8]; the 45-day access in the bill blocked Sept. 29 [15]</span></div></li>
+    <li><div><b>Keep one ledger, and make incident reporting a rule.</b><p>Blameless, confidential, protected, and used. Aviation has run it since 1976; hospitals have reviewed their own deaths in a room every week for a century. California already requires it in 15 days; New York in 72 hours.</p><span class="pre">NASA's Aviation Safety Reporting System; the morbidity and mortality conference; SB 53; RAISE [22][23][13][14]</span></div></li>
+    <li><div><b>Fix the cadence, and give the chair to a non-signatory.</b><p>"Regularly" becomes a calendar: monthly, published, with minutes. The chair convenes and arbitrates and has no model to protect.</p><span class="pre">the accord's own line, given a date [2]</span></div></li>
+    <li><div><b>Turn the keys only at the gate.</b><p>A model ships, an incident closes, a standard changes, only when a person outside the six has seen the record.</p><span class="pre">"If I break it, you pay for it," the chair of the Sept. 30 hearing [9]; the Oct. 1 liability bill [18]</span></div></li>
+    <li><div><b>Teach the public the three words.</b><p>Declare, practice, become. Six percent of Americans can describe what a large language model is. A public that can name the thing can ask the questions on this page.</p><span class="pre">Pew Research, February 2026 [11]</span></div></li>
   </ol>
-</div>
-
-<section class="ch">
-  <p class="k">A year ahead</p>
-  <h2>What could happen.</h2>
-</section>
-<div class="dusk">
-  <span class="cap">Two shapes, run for a year</span>
-  <div class="two">
-    <div class="strip">
-      <h3>If the accord runs as written</h3>
-      <ul>
-        <li>Six audits by six auditors chosen by the audited, reported to six boards, published by none.</li>
-        <li>The next internal-deployment incident surfaces the way the last one did: by an outside researcher, months later.</li>
-        <li>"Meet regularly" means whenever the most powerful seat calls lunch.</li>
-        <li>Congress writes the law anyway, after the incident, in the shape of the incident.</li>
-      </ul>
-    </div>
-    <div class="strip">
-      <h3>If the table runs</h3>
-      <ul>
-        <li>One ledger, twelve monthly minutes, a known chair, a known outside seat.</li>
-        <li>Incidents reported by rule, inside days, without blame, and read by every seat.</li>
-        <li>The first standards written by the table become the draft the accord said would "make sense to codify."</li>
-        <li>Companies keep their four layers and gain the one thing they cannot buy alone: a record others trust.</li>
-      </ul>
-    </div>
-  </div>
+  <p class="note">If the accord runs a year as written: six audits by six auditors chosen by the audited, reported to six boards, published by none, and the next internal incident surfaces the way the last one did, by an outside researcher, months later. If the table runs a year: one ledger, twelve sets of minutes, a known chair, a known outside seat, and the first standards the table writes become the draft the accord said would "make sense to codify."</p>
 </div>
 
 <section class="close">
@@ -367,21 +376,25 @@ ol.src li{margin:6px 0;font-size:.95rem;line-height:1.45}
       <li>Nextgov, "White House unveils 'super intelligence' executive order and industry accord," Sept. 29, 2026.</li>
       <li>Rio Times, "Superintelligence Accord: what the SI pact really says," Sept. 30, 2026 (quotes the accord text).</li>
       <li>Tech Times, "White House AI safety accord has no penalties, no breach reporting, self-chosen auditors," Oct. 2, 2026.</li>
-      <li>The Next Web, "Zuckerberg drafted Trump's AI accord, but Microsoft and Amazon didn't sign," Oct. 1, 2026.</li>
+      <li>The Next Web, "Zuckerberg drafted Trump's AI accord, but Microsoft and Amazon didn't sign," Oct. 1, 2026 (attendance per Axios, CBS News and CNN; the drafting claim is this outlet's).</li>
       <li>Alston &amp; Bird Privacy, "White House secures voluntary industry commitments on independent AI audits," Oct. 1, 2026.</li>
-      <li>SiliconANGLE, Sept. 30, 2026; executive order text at whitehouse.gov, "Inaugurating the Era of Super Intelligence," Sept. 29, 2026.</li>
+      <li>SiliconANGLE, "Prominent tech CEOs sign voluntary White House AI safety accord," Sept. 30, 2026.</li>
       <li>METR, written testimony of Chris Painter, Senate Homeland Security subcommittee, Sept. 30, 2026.</li>
       <li>Apollo Research, written testimony of Marius Hobbhahn, same hearing, Sept. 30, 2026.</li>
       <li>Tech Policy Press, "Senate hearing weighs threats from unrestrained AI agents after OpenAI hack," Sept. 30, 2026.</li>
-      <li>The Alignment Collective, research deck, 2025 (five models, five months, five daily gatherings; scores on a 0 to 1 scale).</li>
-      <li>Research notes on the same deck; the intervention sizes await verification against the slide.</li>
-      <li>METR, Hugging Face incident report, Aug. 26, 2026, agent transcripts.</li>
-      <li>"Three rings, one rhythm," teaching page, Oct. 1, 2026.</li>
-      <li>"The Gate Is the Alignment Mechanism," working note, June 30, 2026; "The Multiplayer Operating System," §IV–V, May 2026.</li>
+      <li>"The Gate Is the Alignment Mechanism," working note, June 30, 2026.</li>
       <li>Pew Research, Feb. 2026, as cited in "Who Does This Create?", Sept. 1, 2026.</li>
-      <li>Public-surface rule, Sept. 30, 2026.</li>
-      <li>Ohio AI Summit (OhioX), Columbus, Nov. 18, 2026.</li>
-      <li>NASA Aviation Safety Reporting System, program overview, asrs.arc.nasa.gov (confidential, voluntary, in operation since 1976).</li>
+      <li>Executive Order 14434, "Inaugurating the Era of Super Intelligence," whitehouse.gov, Sept. 29, 2026.</li>
+      <li>Future of Privacy Forum, "California's SB 53: the first frontier AI law, explained"; signed Sept. 29, 2025.</li>
+      <li>Office of the Governor of New York, "AI Safety: Governor Hochul announces next steps to regulate major AI developers," Sept. 21, 2026.</li>
+      <li>Implicator and Crypto Briefing, reports of Sen. Cruz's Sept. 29, 2026 objection to unanimous consent on the Artificial Intelligence Risk Management and Security Act of 2026 (Warner, Schatz, Kim); the Hill's report returned no text; relayed.</li>
+      <li>Americans for Responsible Innovation, "Sen. Hawley introduces AI oversight legislation," Sept. 29, 2025 (Artificial Intelligence Risk Evaluation Act).</li>
+      <li>Nextgov, "AI firms should be held liable for their models' actions, lawmakers say," Oct. 1, 2026 (Blumenthal quotation).</li>
+      <li>Office of Sen. Chris Murphy, "Murphy, Hawley announce breakthrough bipartisan legislation," Oct. 1, 2026 (AI Agent Accountability Act).</li>
+      <li>The White House, "Fact sheet: Biden-Harris administration secures voluntary commitments from leading artificial intelligence companies," July 21, 2023 (Amazon, Anthropic, Google, Inflection, Meta, Microsoft, OpenAI).</li>
+      <li>Tech Policy Press, "Unpacking the Great American Artificial Intelligence Act of 2026," June 14, 2026; Roll Call, June 4, 2026.</li>
+      <li>Senate Commerce Committee release on the 99 to 1 vote, July 1, 2025; Executive Order 14365, Dec. 11, 2025; the 29-state count as verified in "Who Does This Create?", Sept. 2, 2026.</li>
+      <li>NASA Aviation Safety Reporting System, program overview (confidential, voluntary, in operation since 1976).</li>
       <li>Morbidity and mortality conference, a standing requirement of accredited residency programs (ACGME common program requirements).</li>
     </ol>
   </div></details>
@@ -401,7 +414,7 @@ ol.src li{margin:6px 0;font-size:.95rem;line-height:1.45}
   });
   var io=new IntersectionObserver(function(es){
     es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target);}});
-  },{threshold:.25});
+  },{threshold:.2});
   draws.forEach(function(d){io.observe(d);});
 })();
 </script>
